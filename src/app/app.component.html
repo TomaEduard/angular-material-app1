@@ -347,5 +347,107 @@
     <h1><strong>Tabs</strong></h1>
     <br>
 
+    <mat-tab-group mat-align-tabs="end" animationDuration="500ms">
+        <mat-tab label="Tab 1">
+            <p>Some data</p>
+        </mat-tab>
+        <mat-tab label="Tab 2">
+            <p>Some data for Tab 2</p>
+        </mat-tab>
+        <mat-tab label="Tab 3">
+            <p>Some data for Tab 3</p>
+        </mat-tab>
+    </mat-tab-group>
+
+
+    <br>
+    <br>
+
+    <hr>
+    <h1><strong>Grid List</strong></h1>
+    <br>
+
+    <mat-grid-list cols="3" gutterSize="30px" rowHeight="60px">
+        <mat-grid-tile>1</mat-grid-tile>
+        <mat-grid-tile>2</mat-grid-tile>
+        <mat-grid-tile>3</mat-grid-tile>
+        <mat-grid-tile>4</mat-grid-tile>
+    </mat-grid-list>
+
+    <br>
+    <br>
+
+    <mat-grid-list cols="4" rowHeight="4:3">
+        <mat-grid-tile>2.1</mat-grid-tile>
+        <mat-grid-tile>2.2</mat-grid-tile>
+        <mat-grid-tile>2.3</mat-grid-tile>
+        <mat-grid-tile>2.4</mat-grid-tile>
+    </mat-grid-list>
+
+
+    <hr>
+    <h1><strong>Layout</strong></h1>
+    <br>
+
+    <mat-grid-list cols="3" rowHeight="100px">
+        <mat-grid-tile colspan="3">header</mat-grid-tile>
+        <mat-grid-tile colspan="3">Navigation</mat-grid-tile>
+        <mat-grid-tile>Content 1</mat-grid-tile>
+        <mat-grid-tile>Content 2</mat-grid-tile>
+        <mat-grid-tile>Content 3</mat-grid-tile>
+        <mat-grid-tile colspan="3">Footer</mat-grid-tile>
+    </mat-grid-list>
+
+
+    <hr>
+    <h1><strong>Toolbar</strong></h1>
+    <br>
+
+    <mat-toolbar color="primary"><span>My Application</span></mat-toolbar>
+
+    <mat-toolbar color="accent">
+        <mat-toolbar-row>
+            The first title row
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+            The second title row
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+
+    <hr>
+    <h1><strong>Toolbar</strong></h1>
+    <br>
+
+
+    <button mat-button [matMenuTriggerFor]="menu">Open Menu</button>
+
+    <!-- yPosition set open position up/down and xPosition right/left-->
+    <mat-menu #menu="matMenu" yPosition="above" xPosition="after">
+        <button mat-menu-item>First Item menu</button>
+        <button mat-menu-item>Second Item</button>
+        <button mat-menu-item>Third Item</button>
+        <button mat-menu-item [matMenuTriggerFor]="subMenu">Forth Item</button>
+    </mat-menu>
+
+    <mat-menu #subMenu="matMenu">
+        <button mat-menu-item>Forth 1</button>
+        <button mat-menu-item>Forth 2</button>
+    </mat-menu>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 </div>
